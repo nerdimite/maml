@@ -13,7 +13,7 @@ from dataset import load_data, extract_sample
 # ===== ARGUMENTS =====
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataset', default='omniglot/images_background', type=str, help='Path to images_background')
-parser.add_argument('--ckpt', default='model_ckpt.pth', type=str, help='Path to saved model checkpoint')
+parser.add_argument('--ckpt', default='model_ckpt.pth', type=str, help='Path to save model checkpoint')
 parser.add_argument('--k_shot', default=5, type=int, help='No. of support examples per class')
 parser.add_argument('--n_way', default=5, type=int, help='No. of classes per task')
 parser.add_argument('--n_query', default=5, type=int, help='No. of qeury examples per class')
