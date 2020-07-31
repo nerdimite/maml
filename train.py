@@ -125,4 +125,4 @@ for epoch in range(1, epochs+1):
 
 # Save Model
 torch.save({'weights': model.state_dict(),
-            'task_params': task_params}, 'model_ckpt.pth')
+            'task_params': task_params}, args.ckpt)
