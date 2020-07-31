@@ -79,7 +79,7 @@ for epoch in range(1, epochs+1):
             fast_weights = OrderedDict(model.named_parameters())
             
             # Fine-tune
-            for steps in range(inner_train_steps):
+            for step in range(inner_train_steps):
                 # Forward pass
                 logits = model.functional_forward(X_train, fast_weights)
                 # Loss
